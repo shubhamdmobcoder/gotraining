@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func removeDuplicateValues(intSlice []int) []int {
+func RemoveDup(intSlice []int) []int {
 	keys := make(map[int]bool)
 	list := []int{}
 
@@ -19,8 +19,8 @@ func removeDuplicateValues(intSlice []int) []int {
 
 func main() {
 
-	intSliceValues := []int{1, 5, 5, 6, 8, 4, 5, 3, 5, 1, 1, 5, 6}
-	fmt.Println(intSliceValues)
-	removeDuplicateValuesSlice := removeDuplicateValues(intSliceValues)
-	fmt.Println(removeDuplicateValuesSlice)
+	SliceValue := []int{1, 5, 5, 6, 8, 4, 5, 3, 5, 1, 1, 5, 6}
+	fmt.Println(SliceValue)
+	DupSlice := RemoveDup(SliceValue)
+	fmt.Println(DupSlice)
 }
